@@ -9,33 +9,33 @@ void display(int y, int x) {
         for(int j=1; j<=13; j++) {
             // Drawing the horizontal lines
             if((i==1 || i==3 || i==5 || i==7) && (j!=1 && j!=5 && j!=9 && j!=13))
-                printf("Ä");
+                printf("â”€");
             
             // Drawing the vertical lines
             else if((i==2 || i==4 || i==6) && (j==1 || j==5 || j==9 || j==13))
-                printf("³");
+                printf("â”‚");
 
             // Drawing the intersection of horizontal and vertical lines
             else if((i==1) && (j==5 || j==9))
-                printf("Â");
+                printf("â”¬");
             else if((i==7) && (j==5 || j==9))
-                printf("Á");
+                printf("â”´");
             else if((i==3 || i==5) && (j==1))
-                printf("Ã");
+                printf("â”œ");
             else if((i==3 || i==5) && (j==13))
-                printf("´");
+                printf("â”¤");
             else if((i==3 || i==5) && (j==5 || j==9))
-                printf("Å");
+                printf("â”¼");
 
             // Drawing the corners
             else if(i==1 && j==1)
-                printf("Ú");
+                printf("â”Œ");
             else if(i==1 && j==13)
-                printf("¿");
+                printf("â”");
             else if(i==7 && j==1)
-                printf("À");
+                printf("â””");
             else if(i==7 && j==13)
-                printf("Ù");
+                printf("â”˜");
 
             // Drawing the X or O marks
             else if((i==2 || i==4 || i==6) && (j==3 || j==7 || j==11)) {
@@ -48,8 +48,7 @@ void display(int y, int x) {
             else {
                 printf(" "); // Empty space
             }
-        }
-        printf("\n");
+        } printf("\n");
     }
 }
 
